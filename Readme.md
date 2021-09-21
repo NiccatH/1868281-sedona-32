@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Никита Хламов](https://up.htmlacademy.ru/htmlcss/32/user/1868281).
-* Наставник: [Егор Глебов](https://htmlacademy.ru/profile/beast).
+* Наставник: [Лиза Пак](https://htmlacademy.ru/profile/lizzy).
 
 ---
 
