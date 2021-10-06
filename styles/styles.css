@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/GitHub/1868281-sedona-32/fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/GitHub/1868281-sedona-32/fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+.welcome-logo-cover {
+  width: 1200px;
+  height: 485px;
+  background-color: red;
+  background-image: url("/GitHub/1868281-sedona-32/img/background-index.jpg");
+  background-repeat: no-repeat;
+}
+
+.housing {
+  padding-top: 80px;
+  background-image: url("/GitHub/1868281-sedona-32/img/housing.svg");
+  background-repeat: no-repeat;
+}
+
+.food {
+  padding-top: 80px;
+  background-image: url("/GitHub/1868281-sedona-32/img/food.svg");
+  background-repeat: no-repeat;
+}
+
+.souvenirs {
+  padding-top: 80px;
+  background-image: url("/GitHub/1868281-sedona-32/img/souvenirs.svg");
+  background-repeat: no-repeat;
+}
+
+.newsletter-index {
+  background-color: white;
+  background-image: url("/GitHub/1868281-sedona-32/img/background-main-mail.jpg");
+  background-repeat: no-repeat;
+}
+
+.main-inner {
+  background-image: url("/GitHub/1868281-sedona-32/img/background-catalog-filter.jpg");
+  background-repeat: no-repeat;
+}
+
+

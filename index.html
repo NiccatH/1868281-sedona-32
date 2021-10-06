@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -19,6 +20,10 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
+
+        <a class="navigation-logo" href="#">
+          <img class="logo" src="img/sedona-mini-logo.svg" width="138" height="70" alt="логотип города Седона">
+        </a>
 
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
@@ -43,9 +48,11 @@
     </header>
 
     <main class="main-index">
+      <div class="welcome-logo-cover">
+        <img class="welcome-logo" src="img/welcome-index.svg" width="458" height="352" alt="welcome to the crand canyon sedona because the grand canyon sucks">
+      </div>
       <h1>Седона — небольшой городок в Аризоне,
         заслуживающий большего!</h1>
-      <img class="logo" src="#" alt="Логотип города Седона">
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
       </p>
 
@@ -56,27 +63,27 @@
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт
             своя жизнь</p>
-            <img src="#" alt="город Седона">
+            <img src="img/cedona.jpg" width="800" height="384" alt="город Седона">
             <ul class="reccomendation-list">
               <li class="reccomendation-item">
-                <h3 class="reccomendation-title">Жильё</h3>
+                <h3 class="reccomendation-title housing">Жильё</h3>
                 <p class="reccomendation-description">Рекомендуем пожить
                 в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="reccomendation-item">
-                <h3 class="reccomendation-title">Еда</h3>
+                <h3 class="reccomendation-title food">Еда</h3>
                 <p class="reccomendation-description">Всегда заказывайте
                 топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="reccomendation-item">
-                <h3 class="reccomendation-title">Сувениры</h3>
+                <h3 class="reccomendation-title souvenirs">Сувениры</h3>
                 <p class="reccomendation-description">Не только китайского,
                 но и настоящего местного производства!</p>
               </li>
             </ul>
           </li>
           <li class="advantages-item">
-            <img src="#" alt="каменный мост">
+            <img src="img/bridge.jpg" width="800" height="384" alt="каменный мост">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти!
             Если вы осмелитесь, разумеется</p>
@@ -108,7 +115,7 @@
     </main>
 
     <footer class="page-footer">
-      <section class="newsletter">
+      <section class="newsletter-index">
         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
          <form class="newsletter-form" action="#" method="post">
           <p class="newsletter-email">Только полезная информация и никакого спама,
@@ -119,6 +126,7 @@
           <button class="botton newsletter-button" type="submit">Подписаться</button>
          </form>
       </section>
+
 
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
@@ -148,7 +156,7 @@
 
       <section class="madein">
         <h2 class="visually-hidden">Сделоно в</h2>
-          <a href="https://htmlacademy.ru/"><img src="#" alt="логотип HTML academy"></a>
+          <a href="https://htmlacademy.ru/"><img src="img/logo_htmlacademy.svg" width="115" height="33" alt="логотип HTML academy"></a>
       </section>
     </footer>
   </body>
