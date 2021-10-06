@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/GitHub/1868281-sedona-32/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,45 +10,82 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/GitHub/1868281-sedona-32/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
 .welcome-logo-cover {
   width: 1200px;
   height: 485px;
-  background-color: red;
-  background-image: url("/GitHub/1868281-sedona-32/img/background-index.jpg");
+  background-color: white;
+  background-image: url("../img/background-index.jpg");
   background-repeat: no-repeat;
 }
 
 .housing {
   padding-top: 80px;
-  background-image: url("/GitHub/1868281-sedona-32/img/housing.svg");
+  background-image: url("../img/housing.svg");
   background-repeat: no-repeat;
 }
 
 .food {
   padding-top: 80px;
-  background-image: url("/GitHub/1868281-sedona-32/img/food.svg");
+  background-image: url("../img/food.svg");
   background-repeat: no-repeat;
 }
 
 .souvenirs {
   padding-top: 80px;
-  background-image: url("/GitHub/1868281-sedona-32/img/souvenirs.svg");
+  background-image: url("../img/souvenirs.svg");
   background-repeat: no-repeat;
 }
 
 .newsletter-index {
   background-color: white;
-  background-image: url("/GitHub/1868281-sedona-32/img/background-main-mail.jpg");
+  background-image: url("../img/background-main-mail.jpg");
   background-repeat: no-repeat;
 }
 
 .main-inner {
-  background-image: url("/GitHub/1868281-sedona-32/img/background-catalog-filter.jpg");
+  background-image: url("../img/background-catalog-filter.jpg");
   background-repeat: no-repeat;
 }
+
+.hotel-rating-stars-one {
+  width: 72px;
+  height: 17px;
+  background-color: white;
+  background-image: url("../img/star.svg");
+  background-repeat: repeat-x;
+
+}
+
+.hotel-rating-stars-two {
+  width: 54px;
+  height: 17px;
+  background-color: white;
+  background-image: url("../img/star.svg");
+  background-repeat: repeat-x;
+
+}
+
+.hotel-rating-stars-three {
+  width: 36px;
+  height: 17px;
+  background-color: white;
+  background-image: url("../img/star.svg");
+  background-repeat: repeat-x;
+
+}
+
+.hotel-rating-stars-four {
+  width: 36px;
+  height: 17px;
+  background-color: white;
+  background-image: url("../img/star.svg");
+  background-repeat: repeat-x;
+
+}
+
 
 
