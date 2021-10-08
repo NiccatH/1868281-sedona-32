@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT Sans", "Verdana", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans", "Verdana", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -125,6 +125,13 @@ body {
 
 .ai-blue {
   color: #FFFFFF;
+}
+
+.experiment {
+  background-color:#83B3D3;
+}
+
+.ai-blue:nth-child(2) {
   background-color:#83B3D3;
 }
 
