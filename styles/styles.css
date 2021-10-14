@@ -30,79 +30,54 @@ body {
   color: #333333;
   background-color: #FFFFFF;
 }
-
+.content-container {
+  margin: 0 auto;
+  width: 1200px;
+}
 .main-container {
   flex-grow: 1;
-  margin: 0 auto;
 }
 
 .navigation {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  outline: 5px solid red;
-  outline-offset: -5px;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
-  outline: 5px solid red;
-  outline-offset: -5px;
-}
-
-.navigation-user {
-  outline: 5px solid red;
-  outline-offset: -5px;
-}
-
-.navigation-logo-container {
-  margin: 0 auto;
 }
 
 .wrapper-under-welcome {
   padding-top: 63px;
   padding-bottom: 79px;
-  outline: 5px solid red;
-  outline-offset: -5px;
 }
 
 .advantages-list {
-  width: 1200px;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  outline: 5px solid red;
-  outline-offset: -5px;
   list-style-type: none;
 }
 
 
 .ai-with-pic {
-  width: 1200px;
   display: flex;
   flex-wrap: wrap;
-
 }
+
+.reccomendation-item,
 .experiment {
-  height: 384px;
   width: 400px;
 }
 .wrapper-advantages-item-sedona {
   width: 800px;
-  height: 384px;
 }
 
 .reccomendation-list {
   margin: 0;
   padding: 0;
-  width: 1200px;
   display: flex;
-}
-.reccomendation-item {
-  width: 400px;
-  height: 384px;
 }
 
 .interested {
@@ -114,18 +89,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width:1200px;
-  margin: 0 auto;
-}
-
-.newsletter {
-  width: 1200px;
 }
 
 .contacts {
   width: 720px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .maidein {
@@ -135,7 +102,6 @@ body {
 .navigation-link  {
   outline: 5px solid red;
   outline-offset: -5px;
-  margin: 0 auto;
   color: #000000;
   font-weight: 700;
   font-size: 20px;
@@ -262,13 +228,11 @@ body {
 .advantages-item:nth-child(3),
 .advantages-item:nth-child(5)  {
   background-color: rgba(131, 179, 211, 0.12);
-  height: 384px;
   width: 400px;
 }
 
 .advantages-item:nth-child(4) {
   background-color: rgba(131, 179, 211, 0.2);
-  height: 384px;
   width: 400px;
 }
 
@@ -337,14 +301,13 @@ body {
 }
 
 .navigation-logo {
+  width: 138px;
   color: #000000;
   background-color: #FFFFFF;
 }
 
 .welcome-logo-cover {
-  width: 1200px;
   height: 485px;
-  margin: 0 auto;
   color: #000000;
   background-color: white;
   background-image: url("../img/background-index.jpg");
