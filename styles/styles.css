@@ -30,18 +30,48 @@ body {
   color: #333333;
   background-color: #FFFFFF;
 }
+.pagination,
+.hotel-card,
+.infrastructure-type-filter,
+.hotels-found-container{
+  display: flex;
+  list-style-type: none;
+}
+.pagination {
+  width: 368px;
+}
+.pagination-item {
+  margin-right: 8px;
+}
+.hotel-quantity-on-page,
+.rating-container {
+  margin-left: auto;
+}
+
 .content-container {
   margin: 0 auto;
   width: 1200px;
 }
+
+.catalog-container {
+  display: flex;
+  flex-direction: column;
+  width: 1056px;
+  margin: 0 auto;
+}
+
 .main-container {
   flex-grow: 1;
 }
 
+.pagination-container,
 .navigation {
   display: flex;
 }
 
+.pagination,
+.hotel-list,
+.catalog-filter-list,
 .navigation-list {
   margin: 0;
   padding: 0;
