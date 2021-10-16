@@ -112,10 +112,10 @@ body {
 
 .interested {
   padding: 91px;
-  outline: 5px solid red;
-  outline-offset: -5px;
 }
 .page-footer {
+  margin: 0 auto;
+  width: 1200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -130,8 +130,6 @@ body {
 }
 
 .navigation-link  {
-  outline: 5px solid red;
-  outline-offset: -5px;
   color: #000000;
   font-weight: 700;
   font-size: 20px;
@@ -209,9 +207,6 @@ body {
   color:#FFFFFF;
 }
 
-.newsletter-catalog {
-  background-color: #FFFFFF;
-}
 .newsletter-email-catalog {
   color: #333333;
 }
@@ -331,6 +326,7 @@ body {
 }
 
 .navigation-logo {
+  margin: 0 auto;
   width: 138px;
   color: #000000;
   background-color: #FFFFFF;
@@ -370,6 +366,7 @@ body {
 }
 
 .newsletter {
+  width: 1200px;
   color: #FFFFFF;
   background-color: #000000;
   background-image: url("../img/background-main-mail.jpg");
@@ -380,6 +377,8 @@ body {
 .newsletter-catalog {
   background-image: none;
   background-color:#FFFFFF;
+  width: 800px;
+  margin: 0 200px;
 }
 
 
