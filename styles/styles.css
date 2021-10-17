@@ -114,8 +114,6 @@ body {
   padding: 91px;
 }
 .page-footer {
-  margin: 0 auto;
-  width: 1200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -377,8 +375,6 @@ body {
 .newsletter-catalog {
   background-image: none;
   background-color:#FFFFFF;
-  width: 800px;
-  margin: 0 200px;
 }
 
 
