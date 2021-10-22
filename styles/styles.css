@@ -116,11 +116,29 @@ body {
   max-width: 300px;
 }
 
+.footer-social {
+  width: 180px;
+}
+
 .navigation-list {
   width: 400px;
   align-items: center;
 }
 
+.navigation-list:nth-child(1) .navigation-item:not(:nth-child(3)) {
+  margin-right: 33px;
+}
+
+.navigation-user .navigation-item:nth-child(3n+2) {
+  margin-left: 21px;
+}
+
+.navigation-user .navigation-item:nth-child(3n+3) {
+  margin-left: 20px;
+}
+.navigation-user {
+  justify-content: flex-end;
+}
 .wrapper-under-welcome {
   padding-top: 63px;
   padding-bottom: 79px;
@@ -286,6 +304,16 @@ body {
   line-height: 26px;
   margin-top: 0;
   margin-bottom: 26px;;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+.field {
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .interested-index-title {
