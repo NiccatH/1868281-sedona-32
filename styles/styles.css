@@ -159,20 +159,17 @@ body {
   grid-template-columns: repeat(3, 400px);
 }
 
-.advantages-item:nth-child(1) {
-  grid-row: 1/3;
-}
-
-.ai-with-pic:nth-child(2) {
+.ai-with-pic {
   grid-column: 1/-1;
 }
 
- .ai-with-pic .wrapper-advantages-item-sedona {
+ .ai-with-pic:nth-child(3n+1) .wrapper-advantages-item-sedona {
   grid-column: 2/-1;
  }
 
- .ai-with-pic:nth-child(2) .wrapper-advantages-item-sedona {
-  grid-column: 1/3;
+ .ai-with-pic:nth-child(2n) .wrapper-advantages-item-sedona {
+   grid-column: 1/3;
+   grid-row: 1/2;
  }
 
 .reccomendation-item,
