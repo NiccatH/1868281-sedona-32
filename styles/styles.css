@@ -49,11 +49,6 @@ body {
   list-style-type: none;
 }
 
-.hotels-found-container .button {
-  height: 48px;
-  width: 48px;
-}
-
 .hotels-found-container {
   width: 1057px;
 }
@@ -95,6 +90,14 @@ body {
   flex-wrap: wrap;
 }
 
+.page-header {
+  z-index: 1;
+}
+.navigation {
+  padding-left: 71px;
+  padding-right: 72px;
+}
+
 .reccomendation-list,
 .advantages-list,
 .pagination,
@@ -115,11 +118,23 @@ body {
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 300px;
 }
 
 .footer-social {
-  width: 180px;
+  width: 179px;
+  margin-left: 72px;
+}
+
+.footer-social-item .button {
+  background-color: #FFFFFF;
+}
+
+.footer-social-item:nth-child(3n+1) {
+  margin-right: 3px;
+}
+
+.footer-social-item:nth-child(3n+2) {
+  margin-right: 4px;
 }
 
 .navigation-list {
@@ -136,11 +151,20 @@ body {
 }
 
 .navigation-user .navigation-item:nth-child(3n+3) {
-  margin-left: 20px;
+  margin-left: 33px;
 }
+
 .navigation-user {
   justify-content: flex-end;
 }
+
+.navigation-user .navigation-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
 .wrapper-under-welcome {
   padding-top: 63px;
   padding-bottom: 79px;
@@ -150,6 +174,22 @@ body {
 
 .under-welcome {
   margin: 0;
+}
+
+.navigation-user .navigation-item:nth-child(2) {
+  position:relative;
+}
+.round-green {
+  color: #FFFFFF;
+  display: block;
+  padding: 3px;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  position:absolute;
+  top: -3px;
+  right: -7px;
+  font-size: 10px;
+  transform: scale(0.7);
 }
 
 .advantages-list,
@@ -194,22 +234,123 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .contacts {
   width: 720px;
-
+  margin: auto;
 }
-.maidein {
+.madein {
   width: 115px;
+  margin-top: 42px;
+  margin-bottom: 44px;
+  margin-right: 72px;
 }
 
 .navigation-link  {
   color: #000000;
   font-weight: 700;
+  padding: 6px 12px;
   font-size: 20px;
   line-height: 26px;
   text-decoration: none;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-item:nth-child(1) .social-link {
+  padding: 12px 11px;
+}
+
+.footer-social-item:nth-child(2) .social-link {
+  padding: 11px 15px;
+}
+
+.footer-social-item:nth-child(3) .social-link {
+  padding: 12px 10px;
+}
+
+.social-icon,
+.navigation-icon {
+  display: block;
+}
+
+.social-link:hover .social-icon {
+  fill:#68A2CA;
+}
+
+.social-link:focus {
+  box-shadow: inset 0 0 0 3px #83B3D3;
+  outline: none;
+  border-radius: 10px;
+}
+
+.social-link:focus .social-icon {
+  fill:#68A2CA;
+}
+
+.social-link:active .social-icon {
+  fill:#68A2CA;
+  opacity: 30%;
+}
+
+.navigation-link:hover,
+.contacts-phone:hover,
+.madein-link:hover {
+  color: #756257;
+}
+
+.navigation-link:focus {
+  color: #756257;
+  box-shadow: inset 0 0 0 3px #83B3D3;
+  outline: none;
+  border-radius: 10px;
+}
+.navigation-link:not([href]) {
+  text-decoration-line:underline;
+  text-decoration-style: solid;
+  text-decoration-color:#756257;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 25px;
+}
+
+.navigation-link:active {
+  color: #756257;
+  opacity: 30%;
+}
+
+.navigation-link:hover .navigation-icon {
+  fill: #756257;
+}
+
+.navigation-link:focus .navigation-icon {
+  fill: #756257;
+}
+
+.navigation-linl:active .navigation-icon {
+  fill: #756257;
+  opacity: 30%;
+}
+
+.wanna-go:hover {
+  background-color: #615048;
+}
+
+.wanna-go:focus {
+  background-color: #615048;
+  box-shadow: 0 0 0 3px #83B3D3;
+  outline: none;
+  border-radius: 4px;
+}
+
+.wanna-go:active {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .wanna-go {
@@ -218,16 +359,48 @@ body {
   padding-top: 9px;
   padding-bottom: 10px;
 }
+.grid-button-toggle {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 14px;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.grid-button-toggle-current {
+  border: 2px solid #000000;
+}
+
+.grid-button-toggle:nth-of-type(2) {
+  margin-left: 8px;
+  margin-right: 8px;
+
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
 
 .button {
+ display: inline-block;
  font-size: 16px;
  color: #FFFFFF ;
  font-weight: 700;
+ box-sizing: border-box;
  background-color: #756257;
+ border: none;
  border-radius: 4px;
  text-align: center;
  text-transform: uppercase;
  text-decoration: none;
+ cursor: pointer;
 }
 
 .button-blue {
@@ -236,7 +409,6 @@ body {
 
 .button-search {
   min-width: 575px;
-  display: block;
   padding-top: 10px;
   padding-bottom: 14px;
   font-size: 20px;
@@ -245,17 +417,25 @@ body {
 }
 
 .newsletter-button {
+  width: 200px;
+  min-height: 60px;
+  padding: 0;
   font-size: 20px;
   line-height: 26px;
   border-radius: 0px 10px 10px 0px;
 }
 
 .pagination-load-more {
+  align-self: center;
+  width: 625px;
   font-size: 20px;
   line-height: 26px;
 }
 
 .button-reset {
+  display: inline-block;
+  background: transparent;
+  border: none;
   color: #FFFFFF;
   text-decoration: none;
   font-weight: 400;
@@ -279,7 +459,6 @@ body {
   color: #FFFFFF;
   font-size: 16px;
   text-decoration: none;
-  margin-right: 26px;
 }
 
 .main-index {
@@ -314,8 +493,11 @@ body {
   margin-bottom: 94px;
 }
 .field {
+  min-width: 600px;
   font-size: 18px;
   line-height: 26px;
+  background-color: #F2F2F2;
+
 }
 
 .interested-index-title {
@@ -497,26 +679,36 @@ body {
   line-height: 23px;
 }
 
+.navigation-list:first-of-type {
+  margin-top: 19px;
+  margin-bottom: 20px;
+}
+
+.navigation-user {
+  align-items: center;
+}
+
 .navigation-logo {
   margin: 0 auto;
+  margin-bottom: -34px;
+  z-index: 1;
   width: 138px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 
 .welcome-logo-cover {
-  height: 485px;
+  position: relative;
   color: #000000;
   background-color: white;
-  background-image: url("../img/background-index.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/divider.svg") no-repeat bottom, url("../img/background-index.jpg") no-repeat;
 }
 
 .welcome-logo {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 51px;
-  margin-bottom: 82px;
+  margin-top: 52px;
+  margin-bottom: 77px;
 }
 
 .housing {
@@ -544,8 +736,8 @@ body {
 }
 
 .newsletter {
-  min-height: 411px;
   width: 1200px;
+  min-height: 411px;
   color: #FFFFFF;
   background-color: #000000;
   background-image: url("../img/background-main-mail.jpg");
