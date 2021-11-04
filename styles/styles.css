@@ -187,6 +187,8 @@ body {
 
 .hotel-main-info-container {
   margin-left: 36px;
+  display: grid;
+  grid-template-columns: 150px 300px;
 }
 
 .breadcrumbs {
@@ -579,6 +581,12 @@ border-radius: 10px;
   padding-top: 9px;
   padding-bottom: 10px;
   width: 151px;
+  max-height: 37px;
+  align-self: end;
+}
+
+.hotel-card-type {
+  align-self: start;
 }
 
 .button+.button {
@@ -933,7 +941,8 @@ border-radius: 10px;
 }
 
 .hotel-card-title {
-  margin: 0 0 6px -15px;
+  margin: 0 0 0 -15px;
+  grid-column: 1/-1;
 }
 
 .hotel-title-link {
@@ -962,14 +971,6 @@ border-radius: 10px;
   font-size: 24px;
   line-height: 31px;
   text-decoration: none;
-}
-
-.catalog-card-links-container {
-  margin-top: 21px
-}
-
-.hotel-card-type {
-  margin-right: 78px;
 }
 
 .hotel-rating-text {
