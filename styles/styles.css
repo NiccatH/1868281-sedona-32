@@ -180,7 +180,7 @@ body {
 }
 
 .hotel-card {
-  padding-top: 31px;
+  margin-top: 31px;
   padding-bottom: 30px;
   border-bottom: 1px solid #E5E5E5;
 }
@@ -188,7 +188,8 @@ body {
 .hotel-main-info-container {
   margin-left: 36px;
   display: grid;
-  grid-template-columns: 150px 300px;
+  grid-template-columns: 151px auto;
+  gap: 6px;
 }
 
 .breadcrumbs {
@@ -578,21 +579,15 @@ border-radius: 10px;
 }
 
 .hotel-card-button {
-  padding-top: 9px;
-  padding-bottom: 10px;
+  padding-top: 7px;
+  padding-bottom: 8px;
   width: 151px;
-  max-height: 37px;
   align-self: end;
 }
 
 .hotel-card-type {
   align-self: start;
 }
-
-.button+.button {
-  margin-left: 4px;
-}
-
 
 .pagination-load-more {
   align-self: center;
@@ -926,6 +921,11 @@ border-radius: 10px;
 }
 .hotel-card-image {
   display: block;
+}
+.hotel-image-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hotel-image-link:hover {
   opacity: 60%;
