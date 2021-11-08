@@ -55,6 +55,50 @@
               </span>
             </a>
             <span class="round-green">12</span>
+            <div class="popover popover-cart popover-open">
+
+              <div class="popover-content">
+                <h2 class="visually-hidden">Избранное</h2>
+                <ul class="popover-list">
+                  <li class="popover-item">
+                    <a class="favourite-link" href="#">
+                      <img class="popover-image" src="img/catalog/hotel-two.jpg" width="180" height="120" alt="Дэзерт Куэйл Инн">
+                      <h3 class="popover-card-title">Desert Quail Inn</h3>
+                      <span class="popover-card-type">Мотель</span>
+                    </a>
+                    <button type="button" class="basket-delete-button">
+                      <svg class="basket-icon"
+                      aria-hidden="true" focusable="false"
+                      width="16" height="16"
+                      viewBox="0 0 16 16" fill="#000"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" fill="#000"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/></svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="popover-item">
+                    <a class="favourite-link" href="#">
+                      <img class="popover-image" src="img/catalog/hotel-three.jpg" width="180" height="120" alt="Вилас эт Поко Диабло">
+                      <h3 class="popover-card-title">Villas at Poco Diablo</h3>
+                      <span class="popover-card-type">Апартаменты</span>
+                    </a>
+                    <button type="button" class="basket-delete-button">
+                      <svg class="basket-icon"
+                      aria-hidden="true" focusable="false"
+                      width="16" height="16"
+                      viewBox="0 0 16 16" fill="#000"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" fill="#000"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/>
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <a class="button all-favourite-button" href="#">Все избранные</a>
+
+              </div>
+
+            </div>
           </li>
           <li class="navigation-item">
             <a class="button wanna-go" href="#">Хочу сюда!</a>
@@ -217,6 +261,89 @@
           </a>
       </section>
     </footer>
+    </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <svg class="modal-close" width="13" height="13"
+          aria-hidden="true" focusable="false"
+          viewBox="0 0 13 13" fill="#000"
+          xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group form-arrival-date">
+              <label class="form-label" for="arrival-date">
+                Дата заезда:
+              </label>
+              <input class="field-modal field-arrival-dep" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату">
+              <span class="info-modal info-error">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="field-group form-departure-date">
+              <label class="form-label" for="departure-date">
+                Дата выезда:
+              </label>
+              <input class="field-modal field-arrival-dep" type="text" id="departure-date" name="departure-date" placeholder="Укажите дату">
+              <span class="info-modal info-ok">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <div class="select-container">
+            <p class="form-amount-group form-amount-people-adult">
+              <label for="adult" class="form-label amount-form-label">Взрослые:</label>
+              <button class="amount-people-button input-button-minus" type="button" id="amountAdultMinus">
+                <span class="visually-hidden">Уменьшить количество взрослых</span>
+                <svg class="symbol-icon minus-icon"
+                aria-hidden="true" focusable="false"
+                width="13" height="1"
+                viewBox="0 0 13 1" fill="rgba(0, 0, 0, 0.3)"
+                xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+              </button>
+              <input class="field-input-num" type="number" min="1" max="10" name="adult" value="" id="adult">
+              <button type="button" class="amount-people-button input-button-plus" id="amountAdultPlus">
+                <span class="visually-hidden">Увеличить количество взрослых</span>
+                <svg class="symbol-icon plus-icon"
+                aria-hidden="true" focusable="false"
+                width="13" height="13"
+                viewBox="0 0 13 13" fill="rgba(0, 0, 0, 0.3)"
+                xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+              </button>
+            </p>
+            <p class="form-amount-group form-amount-people-children">
+              <label for="children" class="form-label amount-form-label">Дети:</label>
+              <span class="form-label form-label-icon">
+                <button class="info" type="button">
+                  <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                </button>
+              </span>
+              <button class="amount-people-button input-button-minus" type="button" id="amountChildrenMinus">
+                <span class="visually-hidden">Уменьшить количество детей</span>
+                <svg class="symbol-icon minus-icon"
+                aria-hidden="true" focusable="false"
+                width="13" height="1"
+                viewBox="0 0 13 1" fill="rgba(0, 0, 0, 0.3)"
+                xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+              </button>
+              <input class="field-input-num" type="number" min="0" max="10" name="children" value="" id="children">
+              <button type="button" class="amount-people-button input-button-plus" id="amountChildrenPlus">
+                <span class="visually-hidden">Увеличить количество детей</span>
+                <svg class="symbol-icon plus-icon"
+                aria-hidden="true" focusable="false"
+                width="13" height="13"
+                viewBox="0 0 13 13" fill="rgba(0, 0, 0, 0.3)"
+                xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+              </button>
+              <span class="info-popover">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+              </span>
+            </p>
+            <button type="submit" class="button-blue submit-form-button">Найти
+              <span class="visually-hidden">Найти</span>
+            </button>
+            </div>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
