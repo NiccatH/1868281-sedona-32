@@ -1552,6 +1552,7 @@ border-radius: 10px;
 .form-label {
   line-height: 40px;
   font-weight: 700;
+  align-self: center;
 }
 
 .form-label-icon {
@@ -1672,8 +1673,8 @@ input[type=number] {
  display: flex;
  justify-content: center;
  align-items: center;
- width: 40px;
- height: 40px;
+ width: 45px;
+ height: 50px;
  padding: 0;
  box-sizing: border-box;
  background-color: #F2F2F2;
@@ -1705,19 +1706,16 @@ input[type=number] {
   margin-bottom: 11px;
 }
 
-.form-amount-people-adult {
-  width: 274px;
-}
 
 .form-amount-people-adult {
-
+  width: 290px;
   display: grid;
-  grid-template-columns: 155px 40px 40px 40px;
+  grid-template-columns: 155px 45px 45px 45px;
 }
 .form-amount-people-children{
   display: grid;
-  grid-template-columns: 54px 43px 40px 40px 40px;
-  width: 230px;
+  grid-template-columns: 54px 43px 45px 45px 45px;
+  width: 232px;
   position: relative;
 }
 
@@ -1732,6 +1730,7 @@ input[type=number] {
 }
 
 .info {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1772,7 +1771,8 @@ input[type=number] {
 .info-popover {
   position: absolute;
   top: 50px;
-  right: 26px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 256px;
   background-color: #333333;
   box-sizing: border-box;
@@ -1784,6 +1784,10 @@ input[type=number] {
   font-weight: 400;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
 }
+.info-popover-closed {
+  display: none;
+}
+
 .info-popover::before {
   content: "";
   position: absolute;
@@ -1794,9 +1798,9 @@ input[type=number] {
   background: #333333;
   transform: rotate(45deg);
 }
-.info-popover-closed {
-  display: none;
-}
+
+.info:hover .info-popover { display: block; }
+
 
 
 
