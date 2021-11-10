@@ -509,6 +509,7 @@ border-radius: 10px;
 }
 
 .navigation-link  {
+  position: relative;
   color: #000000;
   font-weight: 700;
   padding: 6px 12px;
@@ -561,13 +562,17 @@ border-radius: 10px;
   outline: none;
   border-radius: 10px;
 }
-.navigation-link:not([href]) {
-  text-decoration-line:underline;
-  text-decoration-style: solid;
-  text-decoration-color:#756257;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 25px;
+
+.navigation-link-current::before {
+  position: absolute;
+  right: 12px;
+  top: 51px;
+  left: 12px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
 }
+
 .navigation-item {
   z-index:1;
 }
