@@ -90,6 +90,7 @@ img {
   background-image: url("../img/down-vector.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
@@ -498,7 +499,7 @@ img {
 }
 
 .contacts {
-  width: 361px;
+  width: 363px;
   margin: 22px auto 24px auto;
 }
 
@@ -1485,7 +1486,7 @@ img {
   position: relative;
   color: #000000;
   background: url("../img/divider.svg") no-repeat bottom, url("../img/background-index.jpg") no-repeat;
-  background-color: #ffc0cb;
+  background-color: #68a2ca;
 }
 
 .welcome-logo {
@@ -1627,6 +1628,7 @@ img {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+  align-self: flex-start;
 }
 
 .form-label {
