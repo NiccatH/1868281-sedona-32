@@ -354,7 +354,7 @@ img {
 .hotel-main-info-container {
   margin-left: 37px;
   display: grid;
-  grid-template-columns: 151px auto;
+  grid-template-columns: 151px 515px;
   gap: 7px;
 }
 
@@ -827,7 +827,7 @@ img {
 
 .hotel-card-type,
 .hotel-card-price {
-  margin-top: -18px;
+  margin-top: -37px;
 }
 
 .pagination-load-more {
@@ -1212,7 +1212,7 @@ img {
 }
 
 .advantages-description {
-  margin: 0 75px;
+  margin: 0 75px 77px 75px;
 }
 
 .description-blue {
@@ -1241,7 +1241,7 @@ img {
 .reccomendation-description {
   color: #333333;
   width: 192px;
-  margin: 0;
+  margin: 0 0 79px 0;
   padding: 0;
 }
 
@@ -1357,6 +1357,11 @@ img {
   outline-color: transparent;
 }
 
+.control-input:disabled + .control-mark {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: default;
+}
+
 .control:active .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -1425,11 +1430,12 @@ img {
 }
 
 .hotel-card-title {
-  margin: -4px 0 0 -15px;
+  margin: -13px 0 15px -15px;
   grid-column: 1/-1;
 }
 
 .hotel-title-link {
+  display: inline-block;
   color: #000000;
   font-weight: 700;
   font-size: 24px;
@@ -1560,20 +1566,24 @@ img {
   background-repeat: space;
 }
 
-.hotel-rating-stars-one {
-  width: 88px;
-}
-
-.hotel-rating-stars-two {
-  width: 67px;
-}
-
-.hotel-rating-stars-three {
-  width: 43px;
+.hotel-rating-stars-five {
+  width: 107px;
 }
 
 .hotel-rating-stars-four {
+  width: 88px;
+}
+
+.hotel-rating-stars-three {
+  width: 67px;
+}
+
+.hotel-rating-stars-two {
   width: 43px;
+}
+
+.hotel-rating-stars-one {
+  width: 19px;
 }
 
 .modal-container {
